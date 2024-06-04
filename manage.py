@@ -1,6 +1,7 @@
-from app import create_app
+from flask import Flask, app
 
-app = create_app()
+app=Flask(__name__)
 
 if __name__ == '__main__':
-    app.run()
+  app.run(debug=True)
+
