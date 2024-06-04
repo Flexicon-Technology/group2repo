@@ -52,5 +52,5 @@ def create_user():
   return jsonify({'message': 'User created successfully'}), 201
 
 if __name__ == '__main__':
-  db.create_all()  # This Creates tables if they don't exist
+  #db.create_all()  # This Creates tables if they don't exist
   app.run(debug=True)
