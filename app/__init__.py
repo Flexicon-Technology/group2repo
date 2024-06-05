@@ -10,9 +10,6 @@ app = Flask(__name__)
 # Configure the app to use a Postgres database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:shayo2006@localhost:/stylehub'
 
-# Disable tracking modifications to the database (not necessary for most use cases)
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
 # Initialize the database connection
 db = SQLAlchemy(app)
 
