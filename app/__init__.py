@@ -5,8 +5,6 @@ from flask_jwt_extended import JWTManager
 import os
 app = Flask(__name__)
 
-# Configure the app to use a Postgres database
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:guessguess@localhost:/stylehub'
 basedir=os.path.abspath(os.path.dirname(__file__))
 
 #database
